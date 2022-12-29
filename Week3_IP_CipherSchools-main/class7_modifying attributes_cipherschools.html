@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+    <title>modifying attributes in Javascript</title>
+  </head>
+  <body>
+    <header class="header-content container" id="header">
+      <p>Welcome!</p>
+    </header>
+    <main>
+      <img
+        src="https://tse4.explicit.bing.net/th?id=OIP.NEfnNeK-4ZctK0EyWu-ASgHaFj&pid=Api&P=0"
+        alt=""
+        width="200px"
+      />
+      <p>This is the main</p>
+      <p>This is the main two</p>
+      <p>This is the main three</p>
+      <p>This is the main four</p>
+    </main>
+    <footer>This is the footer</footer>
+
+    <script>
+      //  modifying the elements & attributes in JS
+
+      let attribute = document.querySelector("img").attributes;
+      console.log(attribute);
+
+      let hasattribute = document.querySelector("img").hasAttribute("src");
+      console.log(hasattribute);
+
+      let getattribute = document.querySelector("img").getAttribute("src");
+      console.log(getattribute);
+
+      let setattribute = document
+        .querySelector("img")
+        .setAttribute(
+          "src",
+          "https://tse1.mm.bing.net/th?id=OIP.XFKfJK6cSKItguEeTbrjngHaEo&pid=Api&P=0"
+        );
+
+      let removeattribute = document
+        .querySelector("img")
+        .removeAttribute(
+          "src",
+          "https://tse1.mm.bing.net/th?id=OIP.XFKfJK6cSKItguEeTbrjngHaEo&pid=Api&P=0"
+        );
+    </script>
+  </body>
+</html>

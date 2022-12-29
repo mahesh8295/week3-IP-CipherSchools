@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+    <title>modifying inline styling in Javascript</title>
+  </head>
+  <body>
+    <header class="header-content container" id="header">
+      <p>Welcome!</p>
+    </header>
+    <main>
+      <img
+        src="https://tse4.explicit.bing.net/th?id=OIP.NEfnNeK-4ZctK0EyWu-ASgHaFj&pid=Api&P=0"
+        alt=""
+        width="200px"
+      />
+      <p>This is the main</p>
+      <p>This is the main two</p>
+      <p>This is the main three</p>
+      <p>This is the main four</p>
+    </main>
+    <footer style="border: 2px solid green">This is the footer</footer>
+
+    <script>
+      // modifying inlinevstyle in JS
+
+      let footer = document.querySelector("footer").style;
+      console.log(footer);
+
+      let footerstyle = (document.querySelector(
+        "footer"
+      ).style.backgroundColor = "lightblue");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content=" initial-scale=1.0" />
+    <title>Types of Variables</title>
+  </head>
+  <body>
+    <h1 class="heading">Welcome to Javascript Week3</h1>
+    <div>
+      <div class="up-container"></div>
+      <div class="bottom-container"></div>
+    </div>
+
+    <script>
+      // var
+      var container = 13;
+      // console.log(container);
+
+      var container = "blue";
+      console.log(container);
+
+      var x = 13,
+        y = 18,
+        z = 20;
+      console.log(x, y, z);
+
+      var contain;
+      console.log(contain);
+
+      // let
+
+      // const
+
+      // example
+      var bgColor = "green";
+      document.querySelector(".up-container").style.backgroundColor = bgColor;
+
+      var bgColor = "pink";
+
+      document.querySelector(".bottom-container").style.backgroundColor =
+        bgColor;
+
+      function heading() {
+        var bgColor = "blue";
+        document.querySelector(".heading").style.color = bgColor;
+      }
+
+      heading();
+    </script>
+  </body>
+</html>

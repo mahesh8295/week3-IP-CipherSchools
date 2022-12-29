@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+    <title>Adding DOM Elements in Javascript</title>
+  </head>
+  <body>
+    <header class="header-content container" id="header">
+      <p>Welcome!</p>
+    </header>
+    <main>
+      <img
+        src="https://tse4.explicit.bing.net/th?id=OIP.NEfnNeK-4ZctK0EyWu-ASgHaFj&pid=Api&P=0"
+        alt=""
+        width="200px"
+      />
+      <p>This is the main</p>
+      <p>This is the main two</p>
+      <p>This is the main three</p>
+      <p>This is the main four</p>
+    </main>
+    <footer style="border: 2px solid green">This is the footer</footer>
+
+    <script>
+      // Adding DOM Elements in JS
+
+      let content = "This is Bootcamp";
+      let header = document.querySelector("header");
+      let container = document.createElement("section");
+
+      container.classList.add("pencil-box");
+      container.setAttribute("id", "pencil");
+
+      container.innerHTML = content;
+
+      header.append(container);
+    </script>
+  </body>
+</html>
